@@ -109,7 +109,12 @@ main{
             }
         }
     }
-    
+    #loadMoreBtn{
+        margin-top: 3rem;
+        border: #9988FF 1px solid;
+        padding: 1rem 3rem;
+        border-radius: 3rem;
+    }
 }
 @media screen and (max-width:1280px){
     

@@ -3,12 +3,15 @@ main {
 }
 main .group {
   opacity: 0;
-  transform: translateY(30%);
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 main .group.mem {
   opacity: 1;
-  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 main .title figure {
   position: relative;
@@ -49,13 +52,24 @@ main .guide .guide_contents {
   width: 80%;
   margin: 0 auto;
   padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 main .guide .guide_contents .guide_txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 30%;
 }
 main .guide .guide_contents .guide_txt .text .information {
@@ -121,23 +135,35 @@ main .guide .guide_contents .guide_txt .text .notice .description span {
 main .guide .guide_contents .guide_txt .map_btn {
   width: 80%;
   padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 main .guide .guide_contents .guide_txt .map_btn .google_map {
   border: 2px solid #9988ff;
   border-radius: 10px;
   padding: 0.5rem;
   width: 44%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
 }
 main .guide .guide_contents .guide_txt .map_btn .google_map:hover {
   border: 2px solid white;
   background-color: #9988ff;
-  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 main .guide .guide_contents .guide_txt .map_btn .google_map:hover span {
@@ -161,15 +187,23 @@ main .guide .guide_contents .guide_txt .map_btn .kakao_map {
   border-radius: 10px;
   padding: 0.5rem;
   width: 44%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
 }
 main .guide .guide_contents .guide_txt .map_btn .kakao_map:hover {
   border: 2px solid white;
   background-color: #9988ff;
-  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 main .guide .guide_contents .guide_txt .map_btn .kakao_map:hover span {
@@ -229,7 +263,8 @@ main .guide .guide_contents .guide_img .map_wrap #category {
   left: 2%;
   border-radius: 10px;
   border: 1px solid rgba(153, 136, 255, 0.5);
-  box-shadow: 0 1px 1px rgba(153, 136, 255, 0.5);
+  -webkit-box-shadow: 0 1px 1px rgba(153, 136, 255, 0.5);
+          box-shadow: 0 1px 1px rgba(153, 136, 255, 0.5);
   background: #fff;
   overflow: hidden;
   z-index: 2;
@@ -286,32 +321,59 @@ main .guide .guide_contents .traffic .alert {
   width: 80%;
   margin: 0 auto;
   padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid #c0c0c0;
 }
 main .guide .guide_contents .traffic .alert p {
   width: 4%;
   display: inline-block;
-  animation-name: alert;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation-name: alert;
+          animation-name: alert;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 main .guide .guide_contents .traffic .alert p img {
   width: 1.875rem;
   height: 1.875rem;
 }
-@keyframes alert {
+@-webkit-keyframes alert {
   0%, 50% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   5%, 15%, 25%, 35%, 45% {
-    transform: rotate(13deg);
+    -webkit-transform: rotate(13deg);
+            transform: rotate(13deg);
   }
   10%, 20%, 30%, 40% {
-    transform: rotate(-13deg);
+    -webkit-transform: rotate(-13deg);
+            transform: rotate(-13deg);
+  }
+}
+@keyframes alert {
+  0%, 50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  5%, 15%, 25%, 35%, 45% {
+    -webkit-transform: rotate(13deg);
+            transform: rotate(13deg);
+  }
+  10%, 20%, 30%, 40% {
+    -webkit-transform: rotate(-13deg);
+            transform: rotate(-13deg);
   }
 }
 main .guide .guide_contents .traffic .alert figcaption {
@@ -324,8 +386,12 @@ main .guide .guide_contents .traffic .public_transport {
 }
 main .guide .guide_contents .traffic .public_transport .subway {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 3rem 0;
   border-bottom: 1px solid #c0c0c0;
 }
@@ -346,9 +412,14 @@ main .guide .guide_contents .traffic .public_transport .subway figure figcaption
 main .guide .guide_contents .traffic .public_transport .subway .subway_route {
   padding-left: 3rem;
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border-left: 1px solid #c0c0c0;
 }
 main .guide .guide_contents .traffic .public_transport .subway .subway_route div {
@@ -411,8 +482,12 @@ main .guide .guide_contents .traffic .public_transport .subway .subway_route div
 main .guide .guide_contents .traffic .public_transport .bus {
   border-bottom: 1px solid #c0c0c0;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 3rem 0;
 }
 main .guide .guide_contents .traffic .public_transport .bus figure {
@@ -433,9 +508,15 @@ main .guide .guide_contents .traffic .public_transport .bus .bus_route {
   width: 80%;
   padding-left: 3rem;
   border-left: 1px solid #c0c0c0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 main .guide .guide_contents .traffic .public_transport .bus .bus_route .bus_way1 {
   width: 45%;
@@ -545,18 +626,28 @@ main .traffic .alert {
   width: 80%;
   margin: 0 auto;
   padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid #c0c0c0;
 }
 main .traffic .alert p {
   width: 4%;
   display: inline-block;
-  animation-name: alert;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation-name: alert;
+          animation-name: alert;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 main .traffic .alert p img {
   width: 1.875rem;
@@ -564,13 +655,16 @@ main .traffic .alert p img {
 }
 @keyframes alert {
   0%, 50% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   5%, 15%, 25%, 35%, 45% {
-    transform: rotate(13deg);
+    -webkit-transform: rotate(13deg);
+            transform: rotate(13deg);
   }
   10%, 20%, 30%, 40% {
-    transform: rotate(-13deg);
+    -webkit-transform: rotate(-13deg);
+            transform: rotate(-13deg);
   }
 }
 main .traffic .alert figcaption {
@@ -583,8 +677,12 @@ main .traffic .public_transport {
 }
 main .traffic .public_transport .subway {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 3rem 0;
   border-bottom: 1px solid #c0c0c0;
 }
@@ -605,9 +703,14 @@ main .traffic .public_transport .subway figure figcaption {
 main .traffic .public_transport .subway .subway_route {
   padding-left: 3rem;
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border-left: 1px solid #c0c0c0;
 }
 main .traffic .public_transport .subway .subway_route div {
@@ -670,8 +773,12 @@ main .traffic .public_transport .subway .subway_route div:nth-of-type(3) em {
 main .traffic .public_transport .bus {
   border-bottom: 1px solid #c0c0c0;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 3rem 0;
 }
 main .traffic .public_transport .bus figure {
@@ -692,9 +799,15 @@ main .traffic .public_transport .bus .bus_route {
   width: 80%;
   padding-left: 3rem;
   border-left: 1px solid #c0c0c0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 main .traffic .public_transport .bus .bus_route .bus_way1 {
   width: 45%;
@@ -840,13 +953,24 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     width: 80%;
     margin: 0 auto;
     padding: 3rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   main .guide .guide_contents .guide_txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 30%;
   }
   main .guide .guide_contents .guide_txt .text .information {
@@ -912,23 +1036,35 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
   main .guide .guide_contents .guide_txt .map_btn {
     width: 80%;
     padding: 2rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   main .guide .guide_contents .guide_txt .map_btn .google_map {
     border: 2px solid #9988ff;
     border-radius: 10px;
     padding: 0.5rem;
     width: 44%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     cursor: pointer;
   }
   main .guide .guide_contents .guide_txt .map_btn .google_map:hover {
     border: 2px solid white;
     background-color: #9988ff;
-    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   main .guide .guide_contents .guide_txt .map_btn .google_map:hover span {
@@ -952,15 +1088,23 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     border-radius: 10px;
     padding: 0.5rem;
     width: 44%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     cursor: pointer;
   }
   main .guide .guide_contents .guide_txt .map_btn .kakao_map:hover {
     border: 2px solid white;
     background-color: #9988ff;
-    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   main .guide .guide_contents .guide_txt .map_btn .kakao_map:hover span {
@@ -1020,7 +1164,8 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     left: 2%;
     border-radius: 10px;
     border: 1px solid rgba(153, 136, 255, 0.5);
-    box-shadow: 0 1px 1px rgba(153, 136, 255, 0.5);
+    -webkit-box-shadow: 0 1px 1px rgba(153, 136, 255, 0.5);
+            box-shadow: 0 1px 1px rgba(153, 136, 255, 0.5);
     background: #fff;
     overflow: hidden;
     z-index: 2;
@@ -1077,32 +1222,59 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     width: 80%;
     margin: 0 auto;
     padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom: 1px solid #c0c0c0;
   }
   main .guide .guide_contents .traffic .alert p {
     width: 4%;
     display: inline-block;
-    animation-name: alert;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    -webkit-animation-name: alert;
+            animation-name: alert;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
   }
   main .guide .guide_contents .traffic .alert p img {
     width: 1.875rem;
     height: 1.875rem;
   }
-  @keyframes alert {
+  @-webkit-keyframes alert {
     0%, 50% {
-      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
     }
     5%, 15%, 25%, 35%, 45% {
-      transform: rotate(13deg);
+      -webkit-transform: rotate(13deg);
+              transform: rotate(13deg);
     }
     10%, 20%, 30%, 40% {
-      transform: rotate(-13deg);
+      -webkit-transform: rotate(-13deg);
+              transform: rotate(-13deg);
+    }
+  }
+  @keyframes alert {
+    0%, 50% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    5%, 15%, 25%, 35%, 45% {
+      -webkit-transform: rotate(13deg);
+              transform: rotate(13deg);
+    }
+    10%, 20%, 30%, 40% {
+      -webkit-transform: rotate(-13deg);
+              transform: rotate(-13deg);
     }
   }
   main .guide .guide_contents .traffic .alert figcaption {
@@ -1115,8 +1287,12 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
   }
   main .guide .guide_contents .traffic .public_transport .subway {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 3rem 0;
     border-bottom: 1px solid #c0c0c0;
   }
@@ -1137,9 +1313,14 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
   main .guide .guide_contents .traffic .public_transport .subway .subway_route {
     padding-left: 3rem;
     width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     border-left: 1px solid #c0c0c0;
   }
   main .guide .guide_contents .traffic .public_transport .subway .subway_route div {
@@ -1202,8 +1383,12 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
   main .guide .guide_contents .traffic .public_transport .bus {
     border-bottom: 1px solid #c0c0c0;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 3rem 0;
   }
   main .guide .guide_contents .traffic .public_transport .bus figure {
@@ -1224,9 +1409,15 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     width: 80%;
     padding-left: 3rem;
     border-left: 1px solid #c0c0c0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   main .guide .guide_contents .traffic .public_transport .bus .bus_route .bus_way1 {
     width: 45%;
@@ -1336,18 +1527,28 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     width: 80%;
     margin: 0 auto;
     padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom: 1px solid #c0c0c0;
   }
   main .traffic .alert p {
     width: 4%;
     display: inline-block;
-    animation-name: alert;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    -webkit-animation-name: alert;
+            animation-name: alert;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
   }
   main .traffic .alert p img {
     width: 1.875rem;
@@ -1355,13 +1556,16 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
   }
   @keyframes alert {
     0%, 50% {
-      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
     }
     5%, 15%, 25%, 35%, 45% {
-      transform: rotate(13deg);
+      -webkit-transform: rotate(13deg);
+              transform: rotate(13deg);
     }
     10%, 20%, 30%, 40% {
-      transform: rotate(-13deg);
+      -webkit-transform: rotate(-13deg);
+              transform: rotate(-13deg);
     }
   }
   main .traffic .alert figcaption {
@@ -1374,8 +1578,12 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
   }
   main .traffic .public_transport .subway {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 3rem 0;
     border-bottom: 1px solid #c0c0c0;
   }
@@ -1396,9 +1604,14 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
   main .traffic .public_transport .subway .subway_route {
     padding-left: 3rem;
     width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     border-left: 1px solid #c0c0c0;
   }
   main .traffic .public_transport .subway .subway_route div {
@@ -1461,8 +1674,12 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
   main .traffic .public_transport .bus {
     border-bottom: 1px solid #c0c0c0;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 3rem 0;
   }
   main .traffic .public_transport .bus figure {
@@ -1483,9 +1700,15 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     width: 80%;
     padding-left: 3rem;
     border-left: 1px solid #c0c0c0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   main .traffic .public_transport .bus .bus_route .bus_way1 {
     width: 45%;
@@ -1640,20 +1863,36 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     width: 80%;
     margin: 0 auto;
     padding: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   main .guide .guide_contents .guide_txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
   main .guide .guide_contents .guide_txt .text {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   main .guide .guide_contents .guide_txt .text .information {
     padding: 2rem 0;
@@ -1721,23 +1960,34 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     width: 80%;
     padding: 3rem 0 2rem;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   main .guide .guide_contents .guide_txt .map_btn .google_map {
     border: 2px solid #9988ff;
     border-radius: 10px;
     padding: 0.5rem;
     width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     cursor: pointer;
   }
   main .guide .guide_contents .guide_txt .map_btn .google_map:hover {
     border: 2px solid white;
     background-color: #9988ff;
-    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   main .guide .guide_contents .guide_txt .map_btn .google_map:hover span {
@@ -1761,15 +2011,23 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     border-radius: 10px;
     padding: 0.5rem;
     width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     cursor: pointer;
   }
   main .guide .guide_contents .guide_txt .map_btn .kakao_map:hover {
     border: 2px solid white;
     background-color: #9988ff;
-    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   main .guide .guide_contents .guide_txt .map_btn .kakao_map:hover span {
@@ -1828,11 +2086,21 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     width: 80%;
     margin: 0 auto;
     padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    transform-origin: 0% 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
     border-bottom: 1px solid #c0c0c0;
     line-height: 1.8rem;
   }
@@ -1840,24 +2108,45 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     width: 4%;
     padding: 0.4rem 0;
     display: inline-block;
-    animation-name: alert;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    -webkit-animation-name: alert;
+            animation-name: alert;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
   }
   main .traffic .alert p img {
     width: 2rem;
     height: 2rem;
   }
-  @keyframes alert {
+  @-webkit-keyframes alert {
     0%, 50% {
-      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
     }
     5%, 15%, 25%, 35%, 45% {
-      transform: rotate(13deg);
+      -webkit-transform: rotate(13deg);
+              transform: rotate(13deg);
     }
     10%, 20%, 30%, 40% {
-      transform: rotate(-13deg);
+      -webkit-transform: rotate(-13deg);
+              transform: rotate(-13deg);
+    }
+  }
+  @keyframes alert {
+    0%, 50% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    5%, 15%, 25%, 35%, 45% {
+      -webkit-transform: rotate(13deg);
+              transform: rotate(13deg);
+    }
+    10%, 20%, 30%, 40% {
+      -webkit-transform: rotate(-13deg);
+              transform: rotate(-13deg);
     }
   }
   main .traffic .alert figcaption {
@@ -1872,9 +2161,16 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
   }
   main .traffic .public_transport .subway {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 3rem 0;
     border-bottom: 1px solid #c0c0c0;
   }
@@ -1895,9 +2191,14 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
   main .traffic .public_transport .subway .subway_route {
     padding-left: 0;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     border-left: 0;
   }
   main .traffic .public_transport .subway .subway_route div {
@@ -1960,9 +2261,16 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
   }
   main .traffic .public_transport .bus {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 3rem 0;
     border-bottom: 1px solid #c0c0c0;
   }
@@ -1983,9 +2291,14 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
   main .traffic .public_transport .bus .bus_route {
     padding-left: 0;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     border-left: 0;
   }
   main .traffic .public_transport .bus .bus_route .bus_way1 {
@@ -2143,14 +2456,26 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     width: 80%;
     margin: 0 auto;
     padding: 3rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   main .guide .guide_contents .guide_txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
   main .guide .guide_contents .guide_txt .text .information {
@@ -2217,23 +2542,35 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     width: 80%;
     padding: 2rem 0;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   main .guide .guide_contents .guide_txt .map_btn .google_map {
     border: 2px solid #9988ff;
     border-radius: 10px;
     padding: 0.5rem;
     width: 44%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     cursor: pointer;
   }
   main .guide .guide_contents .guide_txt .map_btn .google_map:hover {
     border: 2px solid white;
     background-color: #9988ff;
-    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   main .guide .guide_contents .guide_txt .map_btn .google_map:hover span {
@@ -2257,15 +2594,23 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     border-radius: 10px;
     padding: 0.5rem;
     width: 44%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     cursor: pointer;
   }
   main .guide .guide_contents .guide_txt .map_btn .kakao_map:hover {
     border: 2px solid white;
     background-color: #9988ff;
-    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   main .guide .guide_contents .guide_txt .map_btn .kakao_map:hover span {
@@ -2324,11 +2669,21 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     width: 80%;
     margin: 0 auto;
     padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    transform-origin: 0% 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
     border-bottom: 1px solid #c0c0c0;
     line-height: 1.8rem;
   }
@@ -2336,24 +2691,45 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     width: 4%;
     padding: 0.4rem 0;
     display: inline-block;
-    animation-name: alert;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    -webkit-animation-name: alert;
+            animation-name: alert;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
   }
   main .guide .traffic .alert p img {
     width: 1.875rem;
     height: 1.875rem;
   }
-  @keyframes alert {
+  @-webkit-keyframes alert {
     0%, 50% {
-      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
     }
     5%, 15%, 25%, 35%, 45% {
-      transform: rotate(13deg);
+      -webkit-transform: rotate(13deg);
+              transform: rotate(13deg);
     }
     10%, 20%, 30%, 40% {
-      transform: rotate(-13deg);
+      -webkit-transform: rotate(-13deg);
+              transform: rotate(-13deg);
+    }
+  }
+  @keyframes alert {
+    0%, 50% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    5%, 15%, 25%, 35%, 45% {
+      -webkit-transform: rotate(13deg);
+              transform: rotate(13deg);
+    }
+    10%, 20%, 30%, 40% {
+      -webkit-transform: rotate(-13deg);
+              transform: rotate(-13deg);
     }
   }
   main .guide .traffic .alert figcaption {
@@ -2368,9 +2744,16 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
   }
   main .guide .traffic .public_transport .subway {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 3rem 0;
     border-bottom: 1px solid #c0c0c0;
   }
@@ -2391,10 +2774,18 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
   main .guide .traffic .public_transport .subway .subway_route {
     padding-left: 0;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border-left: 0px;
   }
   main .guide .traffic .public_transport .subway .subway_route div {
@@ -2457,9 +2848,16 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
   }
   main .guide .traffic .public_transport .bus {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 3rem 0;
     border-bottom: 1px solid #c0c0c0;
   }
@@ -2481,10 +2879,19 @@ main .traffic .public_transport .bus .bus_route .bus_way2 p:nth-of-type(3)::befo
     width: 100%;
     padding-left: 0;
     border-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   main .guide .traffic .public_transport .bus .bus_route .bus_way1 {
     width: 100%;

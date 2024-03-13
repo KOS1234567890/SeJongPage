@@ -3,12 +3,15 @@ main {
 }
 main .group {
   opacity: 0;
-  transform: translateY(30%);
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 main .group.mem {
   opacity: 1;
-  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 main .mp-greed {
   width: 100%;
@@ -34,15 +37,23 @@ main .mp-section1 {
 }
 main .mp-section1 .mp-greed .mp-status1 {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main .mp-section1 .mp-greed .mp-status1 .user-name {
   width: 50%;
 }
 main .mp-section1 .mp-greed .mp-status1 .user-name figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main .mp-section1 .mp-greed .mp-status1 .user-name figure img {
   width: 46px;
@@ -60,6 +71,8 @@ main .mp-section1 .mp-greed .mp-status1 .day-status {
   width: 50%;
 }
 main .mp-section1 .mp-greed .mp-status1 .day-status ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 main .mp-section1 .mp-greed .mp-status1 .day-status ul li {
@@ -71,13 +84,23 @@ main .mp-section1 .mp-greed .mp-status1 .day-status ul li a span {
 }
 main .mp-section1 .mp-greed .mp-status2 {
   margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main .mp-section1 .mp-greed .mp-status2 .user-welcome figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main .mp-section1 .mp-greed .mp-status2 .user-welcome figure img {
   width: 40px;
@@ -114,18 +137,29 @@ main .mp-section2 .mp-greed .mp-se2-title h1 {
   font-size: 2vw;
 }
 main .mp-section2 .mp-greed .mp-se2-contents .se2-boxs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 main .mp-section2 .mp-greed .mp-se2-contents .se2-boxs .se2-contents-box {
   width: 30%;
   height: 188px;
   background-color: #f3f3f5;
   border-radius: 30px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1764705882);
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1764705882);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1764705882);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 main .mp-section2 .mp-greed .mp-se2-contents .se2-boxs .se2-contents-box .sbox-icon img {
   width: 45px;
@@ -169,9 +203,15 @@ main .mp-section2 .mp-greed .mp-se2-contents .progress-icon {
 }
 main .mp-section2 .mp-greed .mp-se2-contents .progress-icon ul {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 main .mp-section2 .mp-greed .mp-se2-contents .progress-icon ul li {
   width: 25%;
@@ -180,8 +220,12 @@ main .mp-section2 .mp-greed .mp-se2-contents .progress-icon ul li:nth-of-type(1)
   padding-left: 10%;
 }
 main .mp-section2 .mp-greed .mp-se2-contents .progress-icon ul li figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main .mp-section2 .mp-greed .mp-se2-contents .progress-icon ul li figure img {
   width: 35px;
@@ -224,9 +268,15 @@ main .mp-section3 .mp-greed form .mp-se3-searcheck {
   width: 100%;
   height: 61px;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main .mp-section3 .mp-greed form .mp-se3-searcheck .search-item1 {
   width: 15vw;
@@ -237,17 +287,26 @@ main .mp-section3 .mp-greed form .mp-se3-searcheck .search-item1 {
 main .mp-section3 .mp-greed form .mp-se3-searcheck .search-item1 span {
   display: inline-block;
   height: 30px;
-  transform: translateX(50px);
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
 }
 main .mp-section3 .mp-greed form .mp-se3-searcheck .search-item2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #818181;
   font-size: 16px;
 }
 main .mp-section3 .mp-greed form .mp-se3-searcheck .search-item2 figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 main .mp-section3 .mp-greed form .mp-se3-searcheck .search-item2 figure p {
   width: 13px;
@@ -266,6 +325,8 @@ main .mp-section3 .mp-greed form .mp-se3-searcheck .search-item2 figure figcapti
   margin-left: 10px;
 }
 main .mp-section3 .mp-greed form .mp-se3-searcheck .search-item3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 main .mp-section3 .mp-greed form .mp-se3-searcheck .search-item3 .selector-frame {
@@ -274,9 +335,15 @@ main .mp-section3 .mp-greed form .mp-se3-searcheck .search-item3 .selector-frame
   text-align: center;
   border: 1px solid #818181;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 40px;
 }
 main .mp-section3 .mp-greed form .mp-se3-searcheck .search-item3 .selector-frame span {
@@ -297,6 +364,7 @@ main .mp-section3 .mp-greed form .mp-se3-searcheck .search-item3 .selector-frame
   display: none;
 }
 main .mp-section3 .mp-greed form .mp-se3-searcheck .search-item3 .selector-frame:hover .selec-pop {
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   display: block;
 }
@@ -312,6 +380,7 @@ main .mp-section3 .mp-greed form .mp-se3-searcheck .search-item4 a button:hover 
   cursor: pointer;
 }
 main .mp-section3 .mp-greed form .mp-se3-searcheck .search-item4 a button:hover span {
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   color: black;
 }
@@ -347,8 +416,12 @@ main .mp-section3 .mp-greed form .mp-se3-table table tbody tr th {
 main .mp-section3 .mp-greed form .mp-se3-table table .page-change {
   position: absolute;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #c0c0c0;
   left: 45%;
   padding-bottom: 20px;
@@ -386,13 +459,21 @@ main .mp-section3 .mp-greed .mobile-submit .mobile-searcheck {
   height: 121px;
 }
 main .mp-section3 .mp-greed .mobile-submit .mobile-searcheck ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px;
 }
 main .mp-section3 .mp-greed .mobile-submit .mobile-searcheck ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 main .mp-section3 .mp-greed .mobile-submit .mobile-searcheck ul li .mobile-frame {
@@ -491,9 +572,15 @@ main .mp-section4 table tr:nth-of-type(3) {
   color: #818181;
 }
 main .mp-section4 table tr:nth-of-type(3) .page-change {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main .mp-section4 table tr:nth-of-type(3) .page-change p {
   font-size: 1vw;
@@ -523,7 +610,8 @@ main .mp-section4 table tr th button {
   color: white;
   border-radius: 20px;
   border: 2px solid white;
-  box-shadow: 0px 2px 5px #c0c0c0;
+  -webkit-box-shadow: 0px 2px 5px #c0c0c0;
+          box-shadow: 0px 2px 5px #c0c0c0;
 }
 main .mp-section4 table tr th button:hover {
   cursor: pointer;

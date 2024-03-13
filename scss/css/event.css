@@ -1,19 +1,31 @@
 @import url("../css/basic.css");
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main .group {
   opacity: 0;
-  transform: translateY(30%);
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 main .group.mem {
   opacity: 1;
-  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 main .bg {
   background: url("../imgs/event/Event_banner.png");
@@ -21,10 +33,19 @@ main .bg {
   background-size: cover;
   width: 100%;
   height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 main .bg h2 {
   color: white;
@@ -50,9 +71,13 @@ main .bg p {
   width: 80%;
   margin-top: 5%;
   margin-bottom: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 5%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: 0px;
   border-bottom: 4px solid #C0C0C0;
 }
@@ -99,26 +124,38 @@ main .bg p {
   border-color: #C0C0C0;
 }
 .Event_list .colum-contianer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .Event_list .colum-contianer ul {
   margin: 4% auto;
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 10rem auto 5rem;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 4%;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .Event_list .colum-contianer ul li {
   border-radius: 30px;
   border: 0px solid black;
-  box-shadow: 1px 2px 20px 1px rgba(136, 136, 136, 0.5137254902);
+  -webkit-box-shadow: 1px 2px 20px 1px rgba(136, 136, 136, 0.5137254902);
+          box-shadow: 1px 2px 20px 1px rgba(136, 136, 136, 0.5137254902);
   width: 22%;
   min-height: 19.8125rem;
   overflow: hidden;
   margin-bottom: 4%;
+  -webkit-transition: 1s;
   transition: 1s;
 }
 .Event_list .colum-contianer ul li .bgimg {
@@ -137,14 +174,16 @@ main .bg p {
   background-size: cover;
   width: 100%;
   height: 100%;
-  filter: blur(10px);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
 }
 .Event_list .colum-contianer ul li .bgimg .end .blur {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  filter: blur(1px);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
   background-color: rgba(0, 0, 0, 0.74);
 }
 .Event_list .colum-contianer ul li .bgimg .end_contants {
@@ -157,7 +196,8 @@ main .bg p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 2;
 }
 .Event_list .colum-contianer ul li .bgimg img {
@@ -167,8 +207,13 @@ main .bg p {
 }
 .Event_list .colum-contianer ul li .txtbox {
   padding: 0rem 2.5rem 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 1.25rem;
   z-index: 10;
 }
@@ -183,7 +228,8 @@ main .bg p {
   content: "";
 }
 .Event_list .colum-contianer ul li:hover {
-  transform: scale(105%);
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
   cursor: pointer;
 }
 .Event_list .column2 {
@@ -197,7 +243,8 @@ main .bg p {
 }
 .page_turn a span {
   display: inline-block;
-  transform: translateX(6px);
+  -webkit-transform: translateX(6px);
+          transform: translateX(6px);
   height: 11px;
 }
 
@@ -230,8 +277,11 @@ main .bg p {
   }
   main .Event_list .colum-contianer ul {
     margin: 10rem auto 5rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   main .Event_list .colum-contianer ul li {
     width: 45%;
@@ -262,7 +312,8 @@ main .bg p {
   }
   main .Event_list .colum-contianer ul {
     margin: 10rem auto 5rem;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   main .Event_list .colum-contianer ul li {
     width: 100%;
