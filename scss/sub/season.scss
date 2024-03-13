@@ -109,19 +109,7 @@ main{
             }
         }
     }
-    .page_turn{
-        cursor: pointer;
-        text-align: center;
-        letter-spacing:10px;
-        margin: 5rem;
-        a{
-            span{
-                display: inline-block;
-                transform: translateX(6px);
-                height: 11px
-            }
-        }
-    }
+    
 }
 @media screen and (max-width:1280px){
     

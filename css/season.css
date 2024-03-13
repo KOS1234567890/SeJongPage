@@ -135,17 +135,11 @@ main .Season_content ul li:hover {
 main .Season_content .column3 li:nth-of-type(4) {
   opacity: 0;
 }
-main .page_turn {
-  cursor: pointer;
-  text-align: center;
-  letter-spacing: 10px;
-  margin: 5rem;
-}
-main .page_turn a span {
-  display: inline-block;
-  -webkit-transform: translateX(6px);
-          transform: translateX(6px);
-  height: 11px;
+main #loadMoreBtn {
+  margin-top: 3rem;
+  border: #9988FF 1px solid;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
 }
 
 @media screen and (max-width: 1280px) {

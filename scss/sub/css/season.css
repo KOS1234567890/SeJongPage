@@ -135,6 +135,11 @@ main .Season_content ul li:hover {
 main .Season_content .column3 li:nth-of-type(4) {
   opacity: 0;
 }
+main #loadMoreBtn {
+  border: #9988FF 1px solid;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+}
 
 @media screen and (max-width: 1280px) {
   main {
