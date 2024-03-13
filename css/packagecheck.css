@@ -4,7 +4,6 @@ main {
   padding: 20px 111px;
   margin: 0 auto;
 }
-
 main .group {
   opacity: 0;
   -webkit-transform: translateY(30%);
@@ -12,13 +11,11 @@ main .group {
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-
 main .group.mem {
   opacity: 1;
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
-
 main .title {
   padding-bottom: 100px;
   display: -webkit-box;
@@ -31,12 +28,10 @@ main .title {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 main .title h2 {
   position: relative;
   font-size: 42px;
 }
-
 main .title h2 p {
   z-index: -1;
   border-radius: 30px;
@@ -49,7 +44,6 @@ main .title h2 p {
   -webkit-animation: 1s textbar_left forwards;
           animation: 1s textbar_left forwards;
 }
-
 main .title h2 p::after {
   content: "";
   position: absolute;
@@ -62,7 +56,6 @@ main .title h2 p::after {
   -webkit-animation: 2.5s cubic-bezier(0.43, 0.49, 1, 1.27) textbar_left_ball forwards;
           animation: 2.5s cubic-bezier(0.43, 0.49, 1, 1.27) textbar_left_ball forwards;
 }
-
 @-webkit-keyframes textbar_left {
   0% {
     width: 0px;
@@ -71,7 +64,6 @@ main .title h2 p::after {
     width: 271.39px;
   }
 }
-
 @keyframes textbar_left {
   0% {
     width: 0px;
@@ -80,7 +72,6 @@ main .title h2 p::after {
     width: 271.39px;
   }
 }
-
 @-webkit-keyframes textbar_left_ball {
   0% {
     -webkit-transform: translate(0px);
@@ -91,7 +82,6 @@ main .title h2 p::after {
             transform: translate(280px);
   }
 }
-
 @keyframes textbar_left_ball {
   0% {
     -webkit-transform: translate(0px);
@@ -102,7 +92,6 @@ main .title h2 p::after {
             transform: translate(280px);
   }
 }
-
 main .title::after {
   content: "";
   display: block;
@@ -110,7 +99,6 @@ main .title::after {
   width: 20px;
   height: 20px;
 }
-
 main .buy_ticket ul {
   width: 100%;
   display: -webkit-box;
@@ -124,7 +112,6 @@ main .buy_ticket ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 main .buy_ticket ul li {
   font-size: 18px;
   border: 2px solid #C0C0C0;
@@ -143,31 +130,26 @@ main .buy_ticket ul li {
           justify-content: center;
   margin-bottom: 51px;
 }
-
 main .buy_ticket ul li a {
   color: #C0C0C0;
 }
-
 main .buy_ticket ul .color {
   color: #9988FF;
   border-color: #9988FF;
 }
-
 main .ex p {
   font-size: 12px;
   color: #818181;
   margin-bottom: 1rem;
 }
-
 main .ex hr {
   margin-bottom: 62px;
 }
-
 main .date {
   width: 777px;
   border-radius: 30px;
-  -webkit-box-shadow: 1px 5px 5px 5px  #88888883;
-          box-shadow: 1px 5px 5px 5px  #88888883;
+  -webkit-box-shadow: 1px 5px 5px 5px rgba(136, 136, 136, 0.5137254902);
+          box-shadow: 1px 5px 5px 5px rgba(136, 136, 136, 0.5137254902);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,16 +160,13 @@ main .date {
       justify-content: space-around;
   padding: 15px 30px;
 }
-
 main .date p {
   color: #818181;
   font-size: 16px;
 }
-
 main .date span {
   color: #818181;
 }
-
 main .date button {
   width: 43.07px;
   height: 34.2px;
@@ -196,11 +175,9 @@ main .date button {
   border-radius: 30px;
   cursor: pointer;
 }
-
 main .history {
   margin-top: 47px;
 }
-
 main .history .history_list {
   margin-bottom: 20px;
   display: -webkit-box;
@@ -208,62 +185,51 @@ main .history .history_list {
   display: flex;
   gap: 15px;
 }
-
 main .history .history_list li, main .history .history_list p {
   color: #818181;
   font-size: 14px;
 }
-
 main .history .history_list li {
   cursor: pointer;
 }
-
 main .history .history_list .color {
   color: #9988FF;
   border-color: #9988FF;
 }
-
 main .history .history_list_detail {
   width: 100%;
   border-radius: 30px 30px 0 0;
   overflow: hidden;
 }
-
 main .history .history_list_detail thead {
   overflow: hidden;
-  background-color: #9a88ff52;
+  background-color: rgba(154, 136, 255, 0.3215686275);
   width: 100%;
   border-collapse: collapse;
 }
-
 main .history .history_list_detail thead tr {
   border-radius: 30px;
 }
-
 main .history .history_list_detail thead tr th {
   padding: 12px;
   font-size: 12px;
   text-align: center;
   position: relative;
 }
-
 main .history .history_list_detail thead tr th::after {
   content: "|";
   position: absolute;
   right: 0;
   color: #818181;
 }
-
 main .history .history_list_detail thead tr th:last-child::after {
   content: none;
 }
-
 main .history .history_list_detail tbody tr td {
   padding: 1rem;
   font-size: 12px;
   text-align: center;
 }
-
 main .history .history_list_detail tbody tr td button {
   background-color: #C0C0C0;
   font-size: 10px;
@@ -271,32 +237,27 @@ main .history .history_list_detail tbody tr td button {
   padding: 4.88px 9.19px;
   border-radius: 30px;
   border: 1px solid white;
-  -webkit-box-shadow: 1px 1px 1px 1px  #88888883;
-          box-shadow: 1px 1px 1px 1px  #88888883;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(136, 136, 136, 0.5137254902);
+          box-shadow: 1px 1px 1px 1px rgba(136, 136, 136, 0.5137254902);
 }
-
 main .history .history_list_detail tbody tr td button:hover {
   background-color: #9988FF;
 }
-
 main .history hr {
   width: 100%;
-  border: 1px solid #9a88ff52;
+  border: 1px solid rgba(154, 136, 255, 0.3215686275);
 }
-
 main .page_turn {
   text-align: center;
   letter-spacing: 10px;
   margin: 5rem;
 }
-
 main .page_turn a span {
   display: inline-block;
   -webkit-transform: translateX(6px);
           transform: translateX(6px);
   height: 11px;
 }
-
 main .page_turn.active {
   display: none;
 }
@@ -336,7 +297,7 @@ main .page_turn.active {
   main .ex p {
     width: 90%;
     margin-bottom: 1rem;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
   main .ex hr {
     width: 85%;
@@ -350,7 +311,7 @@ main .page_turn.active {
   }
   main .history .history_list_detail thead {
     background-color: white;
-    border-top: #9a88ff52 2px solid;
+    border-top: rgba(154, 136, 255, 0.3215686275) 2px solid;
   }
   main .history .history_list_detail thead tr th:nth-of-type(1) {
     display: none;
@@ -359,7 +320,7 @@ main .page_turn.active {
     display: none;
   }
   main .history .history_list_detail tbody {
-    border-top: #9a88ff52 2px solid;
+    border-top: rgba(154, 136, 255, 0.3215686275) 2px solid;
   }
   main .history .history_list_detail tbody tr td:nth-of-type(1) {
     /* display: none; */
@@ -374,4 +335,3 @@ main .page_turn.active {
     width: 60%;
   }
 }
-/*# sourceMappingURL=packagecheck.css.map */

@@ -4,7 +4,6 @@ main {
   width: 100%;
   padding: 8rem 0;
 }
-
 main .group {
   opacity: 0;
   -webkit-transform: translateY(30%);
@@ -12,13 +11,11 @@ main .group {
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-
 main .group.mem {
   opacity: 1;
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
-
 main article {
   width: 34%;
   margin: 0 auto;
@@ -26,42 +23,35 @@ main article {
   padding: 2rem;
   border-radius: 20px;
 }
-
 main article h3 {
   padding-top: 1rem;
   text-align: center;
   font-size: 1.5rem;
   font-family: "NotoSansKR-Medium";
 }
-
 main article .middle_line {
   text-align: center;
   padding: 1rem 0;
 }
-
 main article .middle_line span {
   display: inline-block;
   width: 16%;
   border: 1.5px solid #111111;
 }
-
 main article > p {
   text-align: center;
   font-size: 0.75rem;
   color: #818181;
 }
-
 main article form {
   padding: 1.5rem;
   margin: 0 auto;
   width: 90%;
 }
-
-main article form input[type="checkbox"] {
+main article form input[type=checkbox] {
   display: none;
 }
-
-main article form input[type="checkbox"] + label {
+main article form input[type=checkbox] + label {
   display: inline-block;
   width: 1rem;
   height: 1rem;
@@ -71,8 +61,7 @@ main article form input[type="checkbox"] + label {
   vertical-align: middle;
   cursor: pointer;
 }
-
-main article form input[id="id_save"]:checked + label::after {
+main article form input[id=id_save]:checked + label::after {
   content: "✔";
   font-size: 0.4rem;
   width: 0.8rem;
@@ -86,11 +75,9 @@ main article form input[id="id_save"]:checked + label::after {
   left: -18%;
   bottom: 0%;
 }
-
 main article form label {
   display: block;
 }
-
 main article form label:nth-of-type(1) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,31 +87,31 @@ main article form label:nth-of-type(1) {
   margin-bottom: 2%;
   border-radius: 10px;
 }
-
 main article form label:nth-of-type(1) input::-webkit-input-placeholder {
   color: #9988ff;
   font-size: 0.875rem;
   font-family: "NotoSansKR-Light";
 }
-
+main article form label:nth-of-type(1) input::-moz-placeholder {
+  color: #9988ff;
+  font-size: 0.875rem;
+  font-family: "NotoSansKR-Light";
+}
 main article form label:nth-of-type(1) input:-ms-input-placeholder {
   color: #9988ff;
   font-size: 0.875rem;
   font-family: "NotoSansKR-Light";
 }
-
 main article form label:nth-of-type(1) input::-ms-input-placeholder {
   color: #9988ff;
   font-size: 0.875rem;
   font-family: "NotoSansKR-Light";
 }
-
 main article form label:nth-of-type(1) input::placeholder {
   color: #9988ff;
   font-size: 0.875rem;
   font-family: "NotoSansKR-Light";
 }
-
 main article form label:nth-of-type(1)::before {
   content: "";
   display: inline-block;
@@ -134,7 +121,6 @@ main article form label:nth-of-type(1)::before {
   background-repeat: no-repeat;
   background-image: url(../../imgs/login/login_id.png);
 }
-
 main article form label:nth-of-type(2) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,31 +130,31 @@ main article form label:nth-of-type(2) {
   margin-bottom: 2%;
   border-radius: 10px;
 }
-
 main article form label:nth-of-type(2) input::-webkit-input-placeholder {
   color: #9988ff;
   font-size: 0.875rem;
   font-family: "NotoSansKR-Light";
 }
-
+main article form label:nth-of-type(2) input::-moz-placeholder {
+  color: #9988ff;
+  font-size: 0.875rem;
+  font-family: "NotoSansKR-Light";
+}
 main article form label:nth-of-type(2) input:-ms-input-placeholder {
   color: #9988ff;
   font-size: 0.875rem;
   font-family: "NotoSansKR-Light";
 }
-
 main article form label:nth-of-type(2) input::-ms-input-placeholder {
   color: #9988ff;
   font-size: 0.875rem;
   font-family: "NotoSansKR-Light";
 }
-
 main article form label:nth-of-type(2) input::placeholder {
   color: #9988ff;
   font-size: 0.875rem;
   font-family: "NotoSansKR-Light";
 }
-
 main article form label:nth-of-type(2)::before {
   content: "";
   display: inline-block;
@@ -178,7 +164,6 @@ main article form label:nth-of-type(2)::before {
   background-repeat: no-repeat;
   background-image: url(../../imgs/login/login_pw.png);
 }
-
 main article form label:nth-of-type(4) {
   padding: 1rem;
   margin-top: 4%;
@@ -190,23 +175,19 @@ main article form label:nth-of-type(4) {
   font-family: "NotoSansKR-Bold";
   cursor: pointer;
 }
-
 main article form label:nth-of-type(4) input {
   background-color: #9988ff;
   color: #ffffff;
   font-size: 1.125rem;
 }
-
 main article form > span {
   font-size: 0.8rem;
   font-family: "NotoSansKR-Light";
 }
-
 main article .convenience {
   width: 100%;
   padding: 0 1.5rem;
 }
-
 main article .convenience .find {
   width: 90%;
   height: 100%;
@@ -221,31 +202,26 @@ main article .convenience .find {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 main article .convenience .find li a {
   font-size: 0.75rem;
   font-family: "NotoSansKR-Light";
 }
-
 main article .convenience .find span {
   display: inline-block;
   height: 10px;
   border: 0.3px solid #c0c0c0;
 }
-
 main article .convenience .sns_login {
   width: 90%;
   margin: 0 auto;
   padding: 2rem 0;
 }
-
 main article .convenience .sns_login p {
   padding: 1.5rem 0;
   text-align: center;
   font-size: 0.75rem;
   font-family: "NotoSansKR-Light";
 }
-
 main article .convenience .sns_login .sns_login_btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,34 +234,27 @@ main article .convenience .sns_login .sns_login_btn {
           justify-content: center;
   width: 100%;
 }
-
 main article .convenience .sns_login .sns_login_btn .naver {
   width: 24%;
   text-align: center;
 }
-
 main article .convenience .sns_login .sns_login_btn .naver img {
   width: 60%;
 }
-
 main article .convenience .sns_login .sns_login_btn .kakao {
   width: 24%;
   text-align: center;
 }
-
 main article .convenience .sns_login .sns_login_btn .kakao img {
   width: 60%;
 }
-
 main article .convenience .sns_login .sns_login_btn .google {
   width: 24%;
   text-align: center;
 }
-
 main article .convenience .sns_login .sns_login_btn .google img {
   width: 60%;
 }
-
 main article .login_notice {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,12 +272,10 @@ main article .login_notice {
   color: #818181;
   border-top: 1px solid #818181;
 }
-
 main article .login_notice span {
   width: 2%;
   text-align: center;
 }
-
 main article .login_notice p {
   display: inline-block;
   width: 97%;
@@ -352,10 +319,10 @@ main article .login_notice p {
     margin: 0 auto;
     width: 90%;
   }
-  main article form input[type="checkbox"] {
+  main article form input[type=checkbox] {
     display: none;
   }
-  main article form input[type="checkbox"] + label {
+  main article form input[type=checkbox] + label {
     display: inline-block;
     width: 1rem;
     height: 1rem;
@@ -365,7 +332,7 @@ main article .login_notice p {
     vertical-align: middle;
     cursor: pointer;
   }
-  main article form input[id="id_save"]:checked + label::after {
+  main article form input[id=id_save]:checked + label::after {
     content: "✔";
     font-size: 0.4rem;
     width: 0.8rem;
@@ -392,6 +359,11 @@ main article .login_notice p {
     border-radius: 10px;
   }
   main article form label:nth-of-type(1) input::-webkit-input-placeholder {
+    color: #9988ff;
+    font-size: 0.875rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article form label:nth-of-type(1) input::-moz-placeholder {
     color: #9988ff;
     font-size: 0.875rem;
     font-family: "NotoSansKR-Light";
@@ -430,6 +402,11 @@ main article .login_notice p {
     border-radius: 10px;
   }
   main article form label:nth-of-type(2) input::-webkit-input-placeholder {
+    color: #9988ff;
+    font-size: 0.875rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article form label:nth-of-type(2) input::-moz-placeholder {
     color: #9988ff;
     font-size: 0.875rem;
     font-family: "NotoSansKR-Light";
@@ -576,7 +553,6 @@ main article .login_notice p {
     width: 97%;
   }
 }
-
 @media (min-width: 641px) and (max-width: 1280px) {
   main {
     background-color: #f3f3f5;
@@ -616,10 +592,10 @@ main article .login_notice p {
     margin: 0 auto;
     width: 80%;
   }
-  main article form input[type="checkbox"] {
+  main article form input[type=checkbox] {
     display: none;
   }
-  main article form input[type="checkbox"] + label {
+  main article form input[type=checkbox] + label {
     display: inline-block;
     width: 1rem;
     height: 1rem;
@@ -629,7 +605,7 @@ main article .login_notice p {
     vertical-align: middle;
     cursor: pointer;
   }
-  main article form input[id="id_save"]:checked + label::after {
+  main article form input[id=id_save]:checked + label::after {
     content: "✔";
     font-size: 0.4rem;
     width: 0.8rem;
@@ -659,6 +635,11 @@ main article .login_notice p {
     border-radius: 10px;
   }
   main article form label:nth-of-type(1) input::-webkit-input-placeholder {
+    color: #9988ff;
+    font-size: 0.875rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article form label:nth-of-type(1) input::-moz-placeholder {
     color: #9988ff;
     font-size: 0.875rem;
     font-family: "NotoSansKR-Light";
@@ -697,6 +678,11 @@ main article .login_notice p {
     border-radius: 10px;
   }
   main article form label:nth-of-type(2) input::-webkit-input-placeholder {
+    color: #9988ff;
+    font-size: 0.875rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article form label:nth-of-type(2) input::-moz-placeholder {
     color: #9988ff;
     font-size: 0.875rem;
     font-family: "NotoSansKR-Light";
@@ -848,7 +834,6 @@ main article .login_notice p {
     width: 97%;
   }
 }
-
 @media (max-width: 640px) {
   main {
     background-color: #f3f3f5;
@@ -888,10 +873,10 @@ main article .login_notice p {
     margin: 0 auto;
     width: 90%;
   }
-  main article form input[type="checkbox"] {
+  main article form input[type=checkbox] {
     display: none;
   }
-  main article form input[type="checkbox"] + label {
+  main article form input[type=checkbox] + label {
     display: inline-block;
     width: 1rem;
     height: 1rem;
@@ -901,7 +886,7 @@ main article .login_notice p {
     vertical-align: middle;
     cursor: pointer;
   }
-  main article form input[id="id_save"]:checked + label::after {
+  main article form input[id=id_save]:checked + label::after {
     content: "✔";
     font-size: 0.4rem;
     width: 0.8rem;
@@ -931,6 +916,11 @@ main article .login_notice p {
     border-radius: 10px;
   }
   main article form label:nth-of-type(1) input::-webkit-input-placeholder {
+    color: #9988ff;
+    font-size: 0.775rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article form label:nth-of-type(1) input::-moz-placeholder {
     color: #9988ff;
     font-size: 0.775rem;
     font-family: "NotoSansKR-Light";
@@ -972,6 +962,11 @@ main article .login_notice p {
     border-radius: 10px;
   }
   main article form label:nth-of-type(2) input::-webkit-input-placeholder {
+    color: #9988ff;
+    font-size: 0.775rem;
+    font-family: "NotoSansKR-Light";
+  }
+  main article form label:nth-of-type(2) input::-moz-placeholder {
     color: #9988ff;
     font-size: 0.775rem;
     font-family: "NotoSansKR-Light";
@@ -1119,4 +1114,3 @@ main article .login_notice p {
     width: 97%;
   }
 }
-/*# sourceMappingURL=login.css.map */

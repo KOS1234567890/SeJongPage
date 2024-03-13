@@ -4,12 +4,15 @@ main {
 }
 main .group {
   opacity: 0;
-  transform: translateY(30%);
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 main .group.mem {
   opacity: 1;
-  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 main .title {
   width: 100%;
@@ -54,14 +57,27 @@ main section p a {
 }
 main section div {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main section div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 80px 0;
 }
 main section div div p {
@@ -82,8 +98,12 @@ main section div div img {
 main section div div a {
   font-size: 24px;
   color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 500;
   cursor: pointer;
 }
@@ -111,8 +131,13 @@ main section hr {
     width: 100%;
     height: 541px;
     background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-top: 200px;
   }
   main .title h2 {
@@ -136,17 +161,32 @@ main section hr {
     font-size: 1rem;
     color: #818181;
     margin-top: 12%;
-    transform: translateY(100%);
-    animation: title_p 0.5s 0.5s forwards;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-animation: title_p 0.5s 0.5s forwards;
+            animation: title_p 0.5s 0.5s forwards;
     overflow: hidden;
   }
-  @keyframes title_p {
+  @-webkit-keyframes title_p {
     0% {
-      transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
       opacity: 0;
     }
     100% {
-      transform: translateY(0%);
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+  }
+  @keyframes title_p {
+    0% {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
     }
   }
   main section {
@@ -170,15 +210,31 @@ main section hr {
   }
   main section div {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main section div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 80px 0;
   }
   main section div div p {
@@ -199,8 +255,12 @@ main section hr {
   main section div div a {
     font-size: 24px;
     color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-weight: 500;
   }
   main section div div a .icon {
@@ -225,8 +285,13 @@ main section hr {
     width: 100%;
     height: 541px;
     background: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-top: 200px;
   }
   main .title h2 {
@@ -266,15 +331,31 @@ main section hr {
   }
   main section div {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main section div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 80px 0;
   }
   main section div div p {
@@ -295,8 +376,12 @@ main section hr {
   main section div div a {
     font-size: 24px;
     color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-weight: 500;
   }
   main section div div a .icon {
@@ -312,4 +397,4 @@ main section hr {
     height: 2px;
     width: 400px;
   }
-}/*# sourceMappingURL=reservation.css.map */
+}

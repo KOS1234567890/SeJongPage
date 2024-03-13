@@ -15,7 +15,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-
 main .group {
   opacity: 0;
   -webkit-transform: translateY(30%);
@@ -23,13 +22,11 @@ main .group {
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-
 main .group.mem {
   opacity: 1;
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
-
 main .bg {
   background: url("../imgs/event/Event_banner.png");
   background-repeat: no-repeat;
@@ -50,19 +47,16 @@ main .bg {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 main .bg h2 {
   color: white;
   font-size: 3rem;
   font-family: "NotoSansKR-Medium";
 }
-
 main .bg hr {
   width: 4.5625rem;
   margin: 1rem;
   display: none;
 }
-
 main .bg p {
   font-size: 1.25rem;
   color: #818181;
@@ -72,7 +66,6 @@ main .bg p {
 .Event_list {
   width: 100%;
 }
-
 .Event_list .eventing {
   margin: 0 auto;
   width: 80%;
@@ -88,7 +81,6 @@ main .bg p {
   padding-left: 0px;
   border-bottom: 4px solid #C0C0C0;
 }
-
 .Event_list .eventing > li {
   position: relative;
   border-bottom: 4px solid #9988ff;
@@ -96,50 +88,41 @@ main .bg p {
   display: inline-block;
   bottom: -4px;
 }
-
 .Event_list .eventing > li a {
   color: #818181;
   font-size: 1.25rem;
 }
-
 .Event_list .eventing > li .black {
   color: black;
 }
-
 .Event_list .eventing > li hr {
   position: absolute;
   margin-top: 14%;
   border-color: #9988FF;
   width: 100%;
 }
-
 .Event_list .eventing > li a::before {
   display: inline-block;
   height: 0.5625rem;
   width: 0.5625rem;
-  content: '';
+  content: "";
   background-image: url("../imgs/common/icon/circle9x9.svg");
   border-radius: 50%;
   vertical-align: middle;
   margin-right: 0.5625rem;
 }
-
 .Event_list .eventing > li.active {
   border-bottom: 0px;
 }
-
 .Event_list .eventing > li.active a {
   display: block;
 }
-
 .Event_list .eventing > li.active a::before {
   display: none;
 }
-
 .Event_list hr {
   border-color: #C0C0C0;
 }
-
 .Event_list .colum-contianer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,7 +132,6 @@ main .bg p {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .Event_list .colum-contianer ul {
   margin: 4% auto;
   width: 80%;
@@ -164,12 +146,11 @@ main .bg p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 .Event_list .colum-contianer ul li {
   border-radius: 30px;
   border: 0px solid black;
-  -webkit-box-shadow: 1px 2px 20px 1px rgba(136, 136, 136, 0.513725);
-          box-shadow: 1px 2px 20px 1px rgba(136, 136, 136, 0.513725);
+  -webkit-box-shadow: 1px 2px 20px 1px rgba(136, 136, 136, 0.5137254902);
+          box-shadow: 1px 2px 20px 1px rgba(136, 136, 136, 0.5137254902);
   width: 22%;
   min-height: 19.8125rem;
   overflow: hidden;
@@ -177,20 +158,17 @@ main .bg p {
   -webkit-transition: 1s;
   transition: 1s;
 }
-
 .Event_list .colum-contianer ul li .bgimg {
   position: relative;
   height: 16rem;
   border-bottom: 0px solid black;
 }
-
 .Event_list .colum-contianer ul li .bgimg .end {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
-
 .Event_list .colum-contianer ul li .bgimg .end > img {
   z-index: 0;
   background-size: cover;
@@ -199,7 +177,6 @@ main .bg p {
   -webkit-filter: blur(10px);
           filter: blur(10px);
 }
-
 .Event_list .colum-contianer ul li .bgimg .end .blur {
   position: absolute;
   top: 0;
@@ -209,7 +186,6 @@ main .bg p {
           filter: blur(1px);
   background-color: rgba(0, 0, 0, 0.74);
 }
-
 .Event_list .colum-contianer ul li .bgimg .end_contants {
   color: white;
   border: 2px solid white;
@@ -224,13 +200,11 @@ main .bg p {
           transform: translate(-50%, -50%);
   z-index: 2;
 }
-
 .Event_list .colum-contianer ul li .bgimg img {
   background-size: cover;
   width: 100%;
   height: 100%;
 }
-
 .Event_list .colum-contianer ul li .txtbox {
   padding: 0rem 2.5rem 1.875rem;
   display: -webkit-box;
@@ -243,26 +217,21 @@ main .bg p {
   gap: 1.25rem;
   z-index: 10;
 }
-
 .Event_list .colum-contianer ul li .txtbox b {
   font-size: 1.2rem;
 }
-
 .Event_list .colum-contianer ul li .txtbox p {
   font-size: 0.75rem;
   color: #818181;
 }
-
 .Event_list .colum-contianer ul li .txtbox::before {
-  content: '';
+  content: "";
 }
-
 .Event_list .colum-contianer ul li:hover {
   -webkit-transform: scale(105%);
           transform: scale(105%);
   cursor: pointer;
 }
-
 .Event_list .column2 {
   display: none;
 }
@@ -272,7 +241,6 @@ main .bg p {
   letter-spacing: 10px;
   margin: 5rem;
 }
-
 .page_turn a span {
   display: inline-block;
   -webkit-transform: translateX(6px);
@@ -320,7 +288,6 @@ main .bg p {
     font-size: 1.125rem;
   }
 }
-
 @media (max-width: 640px) {
   main {
     width: 100%;
@@ -357,4 +324,3 @@ main .bg p {
     margin: 3rem;
   }
 }
-/*# sourceMappingURL=event.css.map */

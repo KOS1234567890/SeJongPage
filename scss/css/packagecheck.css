@@ -6,18 +6,27 @@ main {
 }
 main .group {
   opacity: 0;
-  transform: translateY(30%);
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+  -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 main .group.mem {
   opacity: 1;
-  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 main .title {
   padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 main .title h2 {
   position: relative;
@@ -30,8 +39,10 @@ main .title h2 p {
   background-color: #9988FF;
   height: 20px;
   position: absolute;
+  -webkit-transition: 1s;
   transition: 1s;
-  animation: 1s textbar_left forwards;
+  -webkit-animation: 1s textbar_left forwards;
+          animation: 1s textbar_left forwards;
 }
 main .title h2 p::after {
   content: "";
@@ -40,8 +51,18 @@ main .title h2 p::after {
   height: 20px;
   border-radius: 90px;
   background-color: #9988FF;
+  -webkit-transition: 1s;
   transition: 1s;
-  animation: 2.5s cubic-bezier(0.43, 0.49, 1, 1.27) textbar_left_ball forwards;
+  -webkit-animation: 2.5s cubic-bezier(0.43, 0.49, 1, 1.27) textbar_left_ball forwards;
+          animation: 2.5s cubic-bezier(0.43, 0.49, 1, 1.27) textbar_left_ball forwards;
+}
+@-webkit-keyframes textbar_left {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 271.39px;
+  }
 }
 @keyframes textbar_left {
   0% {
@@ -51,12 +72,24 @@ main .title h2 p::after {
     width: 271.39px;
   }
 }
-@keyframes textbar_left_ball {
+@-webkit-keyframes textbar_left_ball {
   0% {
-    transform: translate(0px);
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
   }
   100% {
-    transform: translate(280px);
+    -webkit-transform: translate(280px);
+            transform: translate(280px);
+  }
+}
+@keyframes textbar_left_ball {
+  0% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+  100% {
+    -webkit-transform: translate(280px);
+            transform: translate(280px);
   }
 }
 main .title::after {
@@ -68,9 +101,16 @@ main .title::after {
 }
 main .buy_ticket ul {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 main .buy_ticket ul li {
   font-size: 18px;
@@ -79,9 +119,15 @@ main .buy_ticket ul li {
   width: 45%;
   height: 54px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 51px;
 }
 main .buy_ticket ul li a {
@@ -102,10 +148,16 @@ main .ex hr {
 main .date {
   width: 777px;
   border-radius: 30px;
-  box-shadow: 1px 5px 5px 5px rgba(136, 136, 136, 0.5137254902);
+  -webkit-box-shadow: 1px 5px 5px 5px rgba(136, 136, 136, 0.5137254902);
+          box-shadow: 1px 5px 5px 5px rgba(136, 136, 136, 0.5137254902);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 15px 30px;
 }
 main .date p {
@@ -128,6 +180,8 @@ main .history {
 }
 main .history .history_list {
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 15px;
 }
@@ -183,7 +237,8 @@ main .history .history_list_detail tbody tr td button {
   padding: 4.88px 9.19px;
   border-radius: 30px;
   border: 1px solid white;
-  box-shadow: 1px 1px 1px 1px rgba(136, 136, 136, 0.5137254902);
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(136, 136, 136, 0.5137254902);
+          box-shadow: 1px 1px 1px 1px rgba(136, 136, 136, 0.5137254902);
 }
 main .history .history_list_detail tbody tr td button:hover {
   background-color: #9988FF;
@@ -199,7 +254,8 @@ main .page_turn {
 }
 main .page_turn a span {
   display: inline-block;
-  transform: translateX(6px);
+  -webkit-transform: translateX(6px);
+          transform: translateX(6px);
   height: 11px;
 }
 main .page_turn.active {
@@ -220,13 +276,16 @@ main .page_turn.active {
     height: 10px;
   }
   main .title h2 p::after {
-    transform: translate(200px);
+    -webkit-transform: translate(200px);
+            transform: translate(200px);
     height: 10px;
     width: 10px;
   }
   main .buy_ticket ul {
     gap: 1%;
-    justify-content: normal;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
     width: 100%;
   }
   main .buy_ticket ul li {
