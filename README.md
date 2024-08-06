@@ -15,7 +15,7 @@
 ## 최근 업데이트 목록 (ver 1.0.2 / 2024.03.13)
 - 세종시즌 메인 페이지 미디어 쿼리 업데이트
 
-## 상세 업데이트 내용
+## 상세 업데이트 내용 (이미지 참고 사이트 : https://coda.io/d/_dpnRFFPcXYl/css_suA5U)
 
 # media max width 1280px css update
 
