@@ -33,10 +33,11 @@ function popularityswiper() {
     const swipercontainer = document.querySelector(".swiper-con");
     const swiperpagenum = document.querySelector("#count");
     const ppcontent = document.querySelector(".pp-contents");
+    const desktop = window.matchMedia('(max-width:640px)').matches;
 
     let count = 0;
     let prevmax = 6;
-    let nextmax = 0;
+    let mobilemax = 11;
     let widthnum = 1;
 
     prevbtn.addEventListener("click", function () {
@@ -59,21 +60,40 @@ function popularityswiper() {
         }
     });
     function auto(){
-        if (count <= prevmax - 1) {
-            count++;
-            swipercontainer.style.transform = `translateX(-${count * 100}%)`;
-            widthnum += 1;
-            progressbar.style.width = `${widthnum * 16.5}%`;
-            swiperpagenum.textContent = widthnum; // 숫자 갱신
-            console.log(count);
-        } 
-        if( count >= prevmax-0.5){
-            
-            count =0;
-            swipercontainer.style.transform = `translateX(0%)`;
-            widthnum = 1;
-            progressbar.style.width = `${widthnum * 16.5}%`;
-            swiperpagenum.textContent = widthnum; // 숫자 갱신
+        if(desktop){
+            if (count <= mobilemax - 1) {
+                count++;
+                swipercontainer.style.transform = `translateX(-${count * 50}%)`;
+                widthnum += 1;
+                progressbar.style.width = `${widthnum * 9.5}%`;
+                swiperpagenum.textContent = widthnum; // 숫자 갱신
+                console.log(count);
+            } 
+            if( count >= mobilemax-0.5){
+                
+                count =0;
+                swipercontainer.style.transform = `translateX(0%)`;
+                widthnum = 1;
+                progressbar.style.width = `${widthnum * 9.5}%`;
+                swiperpagenum.textContent = widthnum; // 숫자 갱신
+            }
+        }else{
+            if (count <= prevmax - 1) {
+                count++;
+                swipercontainer.style.transform = `translateX(-${count * 100}%)`;
+                widthnum += 1;
+                progressbar.style.width = `${widthnum * 16.5}%`;
+                swiperpagenum.textContent = widthnum; // 숫자 갱신
+                console.log(count);
+            } 
+            if( count >= prevmax-0.5){
+                
+                count =0;
+                swipercontainer.style.transform = `translateX(0%)`;
+                widthnum = 1;
+                progressbar.style.width = `${widthnum * 16.5}%`;
+                swiperpagenum.textContent = widthnum; // 숫자 갱신
+            }
         }
     }
     function showSliding() {

@@ -143,19 +143,6 @@ main{
                 li{
                     margin-top: 5rem;
                     width: 45%;
-                    .bgimg{
-                        img{
-
-                        }
-                    }
-                    .txtbox{
-                        b{
-
-                        }
-                        p{
-
-                        }
-                    }
                 }
             }
         }
@@ -172,25 +159,11 @@ main{
                 li{
                     margin-top: 5rem;
                     width: 100%;
-                    .bgimg{
-                        img{
-
-                        }
-                    }
-                    .txtbox{
-                        b{
-
-                        }
-                        p{
-
-                        }
-                    }
                 }
             }
             .column3{
                 li{
                     &:nth-of-type(4){
-    
                         display: none;
                     }
                 }
